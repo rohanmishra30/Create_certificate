@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#container {
+    height: 200VH;
+    width: 100%;
+    background: #373B44;
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+    background: linear-gradient(to right, #4286f4, #373B44);
+
+}
+
+#divone {
+    display: block;
+}
+
+#container-frm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+#frmbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-conatiner {
+    width: 30%;
+    height: 45%;
+    border: 1px solid black;
+    position: relative;
+    background-color: #023047;
+    border-radius: 20px;
+    /* display: none; */
+}
+
+form {
+    margin: 80px 30px;
+    font-size: 25px;
+
+}
+
+label {
+    color: beige;
+}
+
+.txt {
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    background: none;
+    border-bottom: 1px solid #fff;
+    color: #fb8500;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+#frmbtn input {
+    height: 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    background: #fb8500;
+    color: #023047;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+#frmbtn input:hover {
+    transition: all 0.5s;
+    box-shadow: 0 0 5px 5px #fb8500;
+}
+
+#divtwo {
+    display: none;
+}
+
+#certificate {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#img-container {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    /* background-image: url(../img/certificate-temp.jpg);
+background-repeat: no-repeat;
+background-size: contain; */
+}
+
+#certificate-img {
+    width: 100%;
+    height: 100%;
+}
+
+#heading {
+    top: 10px;
+    left: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+#heading h2 {
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+    font-weight: 900;
+}
+
+#heading h4 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+    font-weight: 900;
+    margin: -25px 0 0 0;
+}
+
+#heading h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+    font-weight: lighter;
+    margin: 10px 0 0 0;
+}
+
+#user_name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    text-transform: none;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+    color: #023047;
+}
+
+#crtificate-text p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+    font-weight: lighter;
+    margin: 10px 0 0 0;
+}
+
+#course_name {
+    text-decoration: underline;
+    color: #023047;
+    font-weight: bold;
+}
+
+#para {
+    position: absolute;
+    left: 80px;
+    top: 55%;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    opacity: 0.8;
+    font-size: 16px;
+    right: 20px;
+}
+
+#sinature {
+    position: absolute;
+    bottom: 130px;
+    right: 80px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+}
+
+#sinature h3 {
+    color: #023047;
+    font-weight: bold;
+}
+
+@media all and (max-width: 500px) {
+    .txt {
+        width: 100%;
+        height: 30px;
+    }
+    #form-conatiner {
+        width: 100%;
+        height: 40%;
+    }
+    #frmbtn input {
+        font-size: 15px;
+    }
+    #heading {
+        top: 16px;
+        left: 67px;
+    }
+    form {
+        margin: 20px 30px;
+        font-size: 13px;
+    }
+    #heading h2 {
+        font-size: 47px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+    }
+
+    #img-container {
+        width: 100VW;
+        height: 50%;
+    }
+
+    #heading h4 {
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+        margin: -12px 0 0 0;
+    }
+
+    #heading h3 {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: lighter;
+        margin: 3px 0 0 0;
+    }
+
+    #user_name {
+        font-family: 'Great Vibes', cursive;
+        font-size: 55px;
+        text-transform: none;
+        margin: -6px 0 0 0;
+        text-decoration: underline;
+        color: #023047;
+    }
+
+    #crtificate-text p {
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: lighter;
+        margin: -8px 0 0 0;
+    }
+
+    #para {
+        position: absolute;
+        left: 65px;
+        top: 50%;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+        opacity: 0.8;
+        text-justify: auto;
+    }
+
+    #sinature {
+        position: absolute;
+        bottom: 74px;
+        right: 57px;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 768px) {
+
+    .txt {
+        width: 85%;
+        height: 30px;
+    }
+    #form-conatiner {
+        width: 62%;
+        height: 50%;
+    }
+    #frmbtn input {
+        font-size: 14px;
+    }
+
+
+    #img-container {
+        width: 100VW;
+        height: 50%;
+    }
+
+    #heading {
+        top: 10px;
+        left: 30%;
+    }
+
+    #heading h2 {
+        font-size: 47px;
+    }
+
+    #heading h2 {
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+    }
+
+    #heading h4 {
+        font-size: 18px;
+        margin: -15px 0 0 0;
+    }
+
+    #heading h3 {
+        font-size: 15px;
+        margin: -4px 0 0 0;
+    }
+
+    #user_name {
+        font-size: 48px;
+        margin: -4px 0 0 0;
+    }
+
+    #crtificate-text p {
+        font-size: 20px;
+        margin: -5px 0 0 0;
+    }
+
+    #para {
+        left: 40px;
+        top: 51%;
+        font-size: 16px;
+    }
+
+    #sinature {
+        bottom: 45px;
+        right: 65px;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+
+    .txt {
+        width: 90%;
+        height: 30px;
+    }
+    #form-conatiner {
+        width: 62%;
+        height: 50%;
+    }
+    #frmbtn input {
+        font-size: 14px;
+    }
+
+
+    #img-container {
+        width: 80VW;
+        height: 50%;
+    }
+
+    #heading {
+        top: 10px;
+        left: 25%;
+    }
+
+    #heading h2 {
+        font-size: 47px;
+    }
+
+    #heading h2 {
+        font-size: 53px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+    }
+
+    #heading h4 {
+        font-size: 18px;
+        margin: -15px 0 0 0;
+    }
+
+    #heading h3 {
+        font-size: 15px;
+        margin: -4px 0 0 0;
+    }
+
+    #user_name {
+        font-size: 48px;
+        margin: -4px 0 0 0;
+    }
+
+    #crtificate-text p {
+        font-size: 20px;
+        margin: -5px 0 0 0;
+    }
+
+    #para {
+        left: 40px;
+        top: 53%;
+        font-size: 16px;
+        right: 20px;
+    }
+
+    #sinature {
+        bottom: 45px;
+        right: 65px;
+    }
+
+}
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+
+
+    .txt {
+        width: 90%;
+        height: 30px;
+    }
+    #form-conatiner {
+        width: 62%;
+        height: 50%;
+    }
+    #frmbtn input {
+        font-size: 18px;
+    }
+
+    #img-container {
+        width: 70VW;
+        height: 50%;
+    }
+
+    #heading {
+        top: 10px;
+        left: 25%;
+    }
+
+    #heading h2 {
+        font-size: 47px;
+    }
+
+    #heading h2 {
+        font-size: 53px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+    }
+
+    #heading h4 {
+        font-size: 18px;
+        margin: -15px 0 0 0;
+    }
+
+    #heading h3 {
+        font-size: 15px;
+        margin: -4px 0 0 0;
+    }
+
+    #user_name {
+        font-size: 48px;
+        margin: -4px 0 0 0;
+    }
+
+    #crtificate-text p {
+        font-size: 20px;
+        margin: -5px 0 0 0;
+    }
+
+    #para {
+        left: 40px;
+        top: 53%;
+        font-size: 16px;
+        right: 20px;
+    }
+
+    #sinature {
+        bottom: 45px;
+        right: 65px;
+    }
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+
+
+    .txt {
+        width: 90%;
+        height: 30px;
+    }
+    #form-conatiner {
+        width: 40%;
+        height: 50%;
+    }
+    #frmbtn input {
+        font-size: 20px;
+    }
+
+    #img-container {
+        width: 60VW;
+        height: 50%;
+    }
+
+    #heading {
+        top: 10px;
+        left: 25%;
+    }
+
+    #heading h2 {
+        font-size: 58px;
+    }
+
+    #heading h2 {
+        font-size: 53px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+    }
+
+    #heading h4 {
+        font-size: 18px;
+        margin: -15px 0 0 0;
+    }
+
+    #heading h3 {
+        font-size: 15px;
+        margin: -4px 0 0 0;
+    }
+
+    #user_name {
+        font-size: 48px;
+        margin: -4px 0 0 0;
+    }
+
+    #crtificate-text p {
+        font-size: 20px;
+        margin: -5px 0 0 0;
+    }
+
+    #para {
+        left: 40px;
+        top: 53%;
+        font-size: 16px;
+        right: 20px;
+    }
+
+    #sinature {
+        bottom: 45px;
+        right: 65px;
+    }
+}
+@media all and (min-width: 1401px) and (max-width: 1800px) {
+
+
+    .txt {
+        width: 90%;
+        height: 30px;
+    }
+    #form-conatiner {
+        width: 50%;
+        height: 50%;
+    }
+    #frmbtn input {
+        font-size: 20px;
+    }
+
+    #img-container {
+        width: 40VW;
+        height: 50%;
+    }
+
+    #heading {
+        top: 10px;
+        left: 25%;
+    }
+
+    #heading h2 {
+        font-size: 58px;
+    }
+
+    #heading h2 {
+        font-size: 53px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0.8;
+        font-weight: 900;
+    }
+
+    #heading h4 {
+        font-size: 18px;
+        margin: -15px 0 0 0;
+    }
+
+    #heading h3 {
+        font-size: 15px;
+        margin: -4px 0 0 0;
+    }
+
+    #user_name {
+        font-size: 48px;
+        margin: -4px 0 0 0;
+    }
+
+    #crtificate-text p {
+        font-size: 20px;
+        margin: -5px 0 0 0;
+    }
+
+    #para {
+        left: 40px;
+        top: 53%;
+        font-size: 16px;
+        right: 20px;
+    }
+
+    #sinature {
+        bottom: 45px;
+        right: 65px;
+    }
+}

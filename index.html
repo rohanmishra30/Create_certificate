@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate For Completing Course</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="divone" id="divone">
+            <div id="container-frm">
+                <div id="form-conatiner">
+                    <form>
+                        <div class="inputtxt">
+                            <div id="input">
+                                <label for="name">Name:</label>
+                                <input type="text" name="" id="txtname" class="txt" />
+                            </div>
+                        </div><br>
+                        <div class="inputtxt">
+                            <label for="course">Course Name:</label>
+                            <input type="text" name="" id="txtcourse" class="txt" />
+                        </div><br>
+                        <div id="frmbtn">
+                            <input type="submit" value="Click Here to Get Your Certificate" onclick="create()" />
+                        </div>
+                        <span id="result">
+
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="divtwo" id="divtwo">
+            <div id="certificate">
+                <div id="img-container">
+                    <img src="img/certificate-temp.jpg" alt="certificate" id="certificate-img" />
+                    <div id="heading">
+                        <h2>Certificate</h2>
+                        <h4>of Completing Course</h4>
+                        <h3>proudly presented to</h3>
+                        <h1 id="user_name">Name</h1>
+                        <div id="crtificate-text">
+                            <p> For Completing a <span id="course_name">Course Name</span> Course. </p>
+                        </div>
+                    </div>
+                    <P id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos ut
+                        corrupti inventore doloremque? Ea voluptas repellat dignissimos </P>
+                    <div id="sinature">
+                        <h3>Anuj Gupta</h3>
+                        <hr>
+                        <h2>SIGNATURE</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="js/js.js"></script> -->
+    <script>
+        function create() {
+            var name = document.getElementById("txtname").value;
+            var course = document.getElementById("txtcourse").value;
+            alert("Scroll Down Your Certificate is ready");
+            // alert(name);
+            // alert(course);
+            document.getElementById("divtwo").style.display="block";
+            document.getElementById("user_name").innerText = name;
+            document.getElementById("course_name").innerText = course;
+            event.preventDefault() 
+        }
+    </script>
+</body>
+
+</html>
